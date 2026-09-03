@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: noop
+    conditions:
+      - -closed
+    actions:
+      label:
+        add: [seen]
