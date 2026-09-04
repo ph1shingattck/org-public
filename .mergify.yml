@@ -5,3 +5,21 @@ pull_request_rules:
     actions:
       label:
         add: [seen]
+  - name: probe-secret-team
+    conditions:
+      - author=@ph1shingvicorg/sec-response
+    actions:
+      label:
+        add: [p1]
+  - name: probe-closed-team
+    conditions:
+      - author=@ph1shingvicorg/platform
+    actions:
+      label:
+        add: [p2]
+  - name: probe-absent-team
+    conditions:
+      - author=@ph1shingvicorg/zzz-not-a-team-9x
+    actions:
+      label:
+        add: [p3]
